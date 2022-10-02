@@ -77,7 +77,7 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U &kp I &kp O &kp P 
 		&kp A &kp S &kp D &kp F &kp G 			      &kp H &kp J &kp K &kp L &kp QUOT
-		&kp Z &kp X &kp C &kp V &kp B				      &kp N &kp M  &ht_tp SLASH UNDERSCORE &dotexcl &mt LSFT RET
+		&kp Z &kp X &kp C &kp V &kp B				      &kp N &kp M  &ht_tp SLASH UNDERSCORE &ht_tp DOT EXCL &mt LSFT RET
           				&kp SPC &kp LSHIFT  				&kp LCTRL &to 2 
 		>;
 		};
