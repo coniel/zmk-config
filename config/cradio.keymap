@@ -33,17 +33,41 @@
     };
 
     behaviors {
-        td0: tap_dance_0 {
+        tdExclDot: tap_dance_excl_dot {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "TAP_DANCE_EXCL_DOT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp EXCL>, <&kp DOT>;
         };
 
-        td1: tap_dance_1 {
+        tdUnderSlash: tap_dance_under_slash {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
+            label = "TAP_DANCE_UNDER_SLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp UNDER>, <&kp SLASH>;
+        };
+
+        tdGtLt: tap_dance_gt_lt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_GT_LT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GT>, <&kp LT>;
+        };
+
+        tdRparLpar: tap_dance_rpar_lpar {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RPAR_LPAR";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RPAR>, <&kp LPAR>;
+        };
+
+        tdRbktLbkt: tap_dance_rbkt_lbkt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RBKT_LBKT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp UNDER>, <&kp SLASH>;
@@ -76,7 +100,7 @@
       bindings = <
         &kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
         &ht_tp ESC A &kp S &hm LALT D &hm LGUI F &kp G 			        	        &kp H &kp J &kp K &kp L &kp TAB
-        &mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &hm RGUI M  &td1 &td0 &kp RET
+        &mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &hm RGUI M  &tdUnderSlash &tdExclDot &kp RET
                       &kp LSHIFT &kp SPC  			 &to 1 &kp LCTL 
       >;
     };
@@ -84,7 +108,7 @@
        		left_layer {
             bindings = <
 		&kp TAB  &kp AT    &kp POUND    &kp DOLLAR    &kp PERCENT		&kp CARET &kp AMPS &kp STAR &kp SEMI &kp BACKSPACE 
-		&kp ESC    &kp TAB    &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE     &kp COLON 		&ht_tp GT LT &ht_tp RPAR LPAR &kp LBRC &kp RBRC &ht_tp RBKT LBKT
+		&kp ESC    &kp TAB    &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE     &kp COLON &tdGtLt &tdRparLpar &kp LBRC &kp RBRC &tdRbktLbkt
 		&kp TILDE    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &to 3
 					    &kp LGUI &to 0   					&to 2 &kp RGUI 
 		>;
