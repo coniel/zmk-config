@@ -76,9 +76,9 @@
        		left_layer {
             bindings = <
 		&kp TAB  &kp AT    &kp POUND    &kp DOLLAR    &kp PERCENT		&kp CARET &kp AMPS &kp STAR &kp SEMI &kp BACKSPACE 
-		&kp ESC    &kp TAB    &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE     &kp COLON 		&ht_tp LT GT &ht_tp LPAR RPAR &ht_tp LBRC RBRC &ht_tp LBKT RBKT  &kp ENTER 
+		&kp ESC    &kp TAB    &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE     &kp COLON 		&td GT LT &td RPAR LPAR &kp LBRC &kp RBRC &td RBKT LBKT
 		&kp TILDE    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &to 3
-					    &to 0  &kp LGUI  					&kp RGUI &to 2 
+					    &kp LGUI &to 0   					&to 2 &kp RGUI 
 		>;
 		};
 		
@@ -87,7 +87,7 @@
 		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
 		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
 		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &to 0 &kp LCTL  				&kp SPC  &to 1 
+					  &kp LCTL &to 0  				&kp SPC  &to 1 
 		>;
 		};	
 		
@@ -96,7 +96,7 @@
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &bootloader 			&bootloader &trans   &trans   &trans  &trans
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &to 0 &trans  					&trans &trans 
+					 &trans &to 0  					&trans &trans 
 		>;
 		};	
         
