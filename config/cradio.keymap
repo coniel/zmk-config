@@ -126,7 +126,7 @@
 
           &kp TILDE   &kp TILDE   &kp NON_US_BSLH   &kp NON_US_HASH   &kp TILDE2 	     &kp LBKT   &hm RGUI LPAR   &kp RPAR   &kp RBKT   &kp RET
 
-          &kp LSHIFT &to 0   					                                                 &to 2 &to 3 
+          &mt LSHIFT ESC &to 0   					                                                 &lht RSHIFT 2 &to 3 
         >;
       };
 		
@@ -150,7 +150,7 @@
 
           &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp C_BRI_DN  &kp C_BRI_UP  &trans &trans   
 
-                 &trans &to 0  					&trans &trans 
+                 &kp LSHIFT &to 0  					&trans &trans 
         >;
       };	
         
